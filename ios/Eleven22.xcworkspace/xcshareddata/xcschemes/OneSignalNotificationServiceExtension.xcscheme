@@ -18,7 +18,7 @@
                BlueprintIdentifier = "BF49AE832649A852001C7B78"
                BuildableName = "OneSignalNotificationServiceExtension.appex"
                BlueprintName = "OneSignalNotificationServiceExtension"
-               ReferencedContainer = "container:WoodmenValley.xcodeproj">
+               ReferencedContainer = "container:Eleven22.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "WoodmenValley.app"
-               BlueprintName = "WoodmenValley"
-               ReferencedContainer = "container:WoodmenValley.xcodeproj">
+               BuildableName = "Eleven22.app"
+               BlueprintName = "Eleven22"
+               ReferencedContainer = "container:Eleven22.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WoodmenValley.app"
-            BlueprintName = "WoodmenValley"
-            ReferencedContainer = "container:WoodmenValley.xcodeproj">
+            BuildableName = "Eleven22.app"
+            BlueprintName = "Eleven22"
+            ReferencedContainer = "container:Eleven22.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "WoodmenValley.app"
-            BlueprintName = "WoodmenValley"
-            ReferencedContainer = "container:WoodmenValley.xcodeproj">
+            BuildableName = "Eleven22.app"
+            BlueprintName = "Eleven22"
+            ReferencedContainer = "container:Eleven22.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
