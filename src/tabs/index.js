@@ -79,11 +79,11 @@ const HomeTab = createFeatureFeedTab({
   feedName: 'HOME',
 });
 
-const ReadTab = createFeatureFeedTab({
+const NextSteps = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
   },
-  tabName: 'Read',
+  tabName: 'Next Steps',
   feedName: 'READ',
 });
 
@@ -93,14 +93,6 @@ const WatchTab = createFeatureFeedTab({
   },
   tabName: 'Watch',
   feedName: 'WATCH',
-});
-
-const PrayTab = createFeatureFeedTab({
-  options: {
-    headerLeft: ProfileButton,
-  },
-  tabName: 'Pray',
-  feedName: 'PRAY',
 });
 
 const CustomConnectScreen = () => (
@@ -147,19 +139,14 @@ const TabNavigator = () => {
         options={{ tabBarIcon: tabBarIcon('home') }}
       />
       <Screen
-        name="Read"
-        component={ReadTab}
-        options={{ tabBarIcon: tabBarIcon('sections') }}
-      />
-      <Screen
         name="Watch"
         component={WatchTab}
         options={{ tabBarIcon: tabBarIcon('video') }}
       />
       <Screen
-        name="Pray"
-        component={PrayTab}
-        options={{ tabBarIcon: tabBarIcon('like') }}
+        name="Next Steps"
+        component={NextSteps}
+        options={{ tabBarIcon: tabBarIcon('sections') }}
       />
       <Screen
         name="Connect"
