@@ -30,36 +30,53 @@ const ActionTable = () => (
       <View>
         <RowHeader>
           <Name>
-            <H4>{'Connect with Apollos'}</H4>
+            <H4>{'Connect'}</H4>
           </Name>
         </RowHeader>
         <TableView>
-          <Touchable
-            onPress={() => openUrl('https://apollosrock.newspring.cc/page/235')}
-          >
+          <Touchable onPress={() => openUrl('https://coe22.com/connect')}>
             <Cell>
-              <CellText>Find a serving opportunity</CellText>
-              <CellIcon name="arrow-next" />
+              <CellText>Connect with us</CellText>
+              <CellIcon name="caret-right" />
             </Cell>
           </Touchable>
           <Divider />
-          <Touchable
-            onPress={() => openUrl('https://apollosrock.newspring.cc/page/236')}
-          >
+          <Touchable onPress={() => openUrl('https://coe22.com/care')}>
             <Cell>
-              <CellText>Join a small group</CellText>
-              <CellIcon name="arrow-next" />
+              <CellText>I need prayer</CellText>
+              <CellIcon name="caret-right" />
             </Cell>
           </Touchable>
           <Divider />
+          <Touchable onPress={() => openUrl('https://coe22.com/baptism')}>
+            <Cell>
+              <CellText>Get baptized</CellText>
+              <CellIcon name="caret-right" />
+            </Cell>
+          </Touchable>
+          <Divider />
+          <Touchable onPress={() => openUrl('https://coe22.com/care')}>
+            <Cell>
+              <CellText>Get care</CellText>
+              <CellIcon name="caret-right" />
+            </Cell>
+          </Touchable>
+          <Divider />
+          <Touchable onPress={() => openUrl('https://coe22.com/campuses')}>
+            <Cell>
+              <CellText>Our locations</CellText>
+              <CellIcon name="caret-right" />
+            </Cell>
+          </Touchable>
+          {/* <Divider />
           <Touchable
             onPress={() => openUrl('https://apollosrock.newspring.cc/page/233')}
           >
             <Cell>
-              <CellText>I need prayer</CellText>
-              <CellIcon name="arrow-next" />
+              <CellText>Report an issue</CellText>
+              <CellIcon name="caret-right" />
             </Cell>
-          </Touchable>
+          </Touchable> */}
         </TableView>
       </View>
     )}

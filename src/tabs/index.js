@@ -23,7 +23,7 @@ import tabBarIcon from './tabBarIcon';
 
 const HeaderLogo = withTheme(({ theme }) => ({
   style: {
-    height: theme.sizing.baseUnit * 2.5,
+    height: theme.sizing.baseUnit * 1.5,
     width: '70%',
     resizeMode: 'contain',
   },
@@ -59,7 +59,7 @@ const SearchButton = () => {
     >
       <Icon
         name="search"
-        size={theme.sizing.baseUnit * 2}
+        size={theme.sizing.baseUnit * 1.5}
         fill={theme.colors.primary}
       />
     </Touchable>
