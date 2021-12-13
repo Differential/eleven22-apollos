@@ -114,10 +114,10 @@
     entities "^1.1.2"
     htmlparser2 "3.9.2"
 
-"@apollosproject/ui-kit@^2.36.3":
-  version "2.36.3"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-kit/-/ui-kit-2.36.3.tgz#2c3524dcbfde93c3c7beecff65c32788dcb968f4"
-  integrity sha512-1nAHcwLgJqcUAqp+rPoAv/p9EAzBBUn+XsyBA+5jhCNs2oEcmSaggVHjzzg2KpbsDgXN3R+jTr7h8UzPdq1eRQ==
+"@apollosproject/ui-kit@^2.41.0":
+  version "2.41.0"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-kit/-/ui-kit-2.41.0.tgz#0e214a76713f7da5f42836d3112e81a3724b8659"
+  integrity sha512-hudNLQDsmgdXGgIRToHwJbTKLrNZC7FJHLiJhwxFnQukc+3ZoXqdBAtwOz4rwKJBc1S5GMWQsWocBG064V9WLA==
   dependencies:
     "@react-native-community/blur" "^3.6.0"
     "@react-native-picker/picker" "^1.9.4"
@@ -125,6 +125,7 @@
     lodash "^4.17.11"
     moment "^2.24.0"
     numeral "^2.0.6"
+    phosphor-react-native "^0.4.0"
     react-native-keyboard-avoiding-scroll-view "1.0.1"
     react-native-modal-datetime-picker "^9.0.0"
     react-native-tab-view "1.0.2"
@@ -7484,6 +7485,11 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
+
+phosphor-react-native@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/phosphor-react-native/-/phosphor-react-native-0.4.0.tgz#b843bd39a8970a53fd5b7729baa39fa3a9c0bf1b"
+  integrity sha512-FsNbV9agH+AZCqEvlAAguK1giRSgEOWIYjjtwrhQj+mcUbZz5WuZgMw9KPjumY4W0f16qkrq1ohsnCX2tu24Qg==
 
 picocolors@^1.0.0:
   version "1.0.0"
