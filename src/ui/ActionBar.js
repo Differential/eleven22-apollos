@@ -14,12 +14,12 @@ const Toolbar = () => {
             label="Check-in"
           />
           <ActionBarItem
-            onPress={() => openUrl('https://apollosrock.newspring.cc/page/186')}
+            onPress={() => openUrl('https://www.coe22.com/give')}
             icon="hands-heart"
             label="Give"
           />
           <ActionBarItem
-            onPress={() => openUrl('https://apollosrock.newspring.cc/page/186')}
+            onPress={() => openUrl('https://www.coe22.com/serve')}
             icon="question"
             label="Volunteer"
           />

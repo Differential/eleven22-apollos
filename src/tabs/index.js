@@ -136,17 +136,17 @@ const TabNavigator = () => {
       <Screen
         name="Home"
         component={HomeTab}
-        options={{ tabBarIcon: tabBarIcon('home') }}
+        options={{ tabBarIcon: tabBarIcon('house') }}
       />
       <Screen
         name="Watch"
         component={WatchTab}
-        options={{ tabBarIcon: tabBarIcon('video') }}
+        options={{ tabBarIcon: tabBarIcon('watch-video') }}
       />
       <Screen
         name="Next Steps"
         component={NextSteps}
-        options={{ tabBarIcon: tabBarIcon('sections') }}
+        options={{ tabBarIcon: tabBarIcon('next-steps') }}
       />
       <Screen
         name="Connect"
