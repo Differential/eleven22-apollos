@@ -18,6 +18,11 @@ const Toolbar = () => {
             icon="hands-heart"
             label="Give"
           />
+          <ActionBarItem
+            onPress={() => openUrl('https://apollosrock.newspring.cc/page/186')}
+            icon="question"
+            label="Volunteer"
+          />
         </ActionBar>
       )}
     </RockAuthedWebBrowser>
