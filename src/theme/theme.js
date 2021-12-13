@@ -1,3 +1,5 @@
+import React from 'react';
+import { Text, Image } from 'react-native';
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -16,7 +18,29 @@ const colors = {
 /* Base Typography sizing and fonts.
  * To control speicfic styles used on different type components (like H1, H2, etc), see "overrides"
  */
-// const typography = {};
+const typography = {
+  sans: {
+    regular: {
+      default: 'InterUI-Regular',
+      italic: 'InterUI-Italic',
+    },
+    medium: {
+      default: 'InterUI-Medium',
+      italic: 'InterUI-MediumItalic',
+    },
+    bold: {
+      default: 'InterUI-Bold',
+      italic: 'InterUI-BoldItalic',
+    },
+    black: {
+      default: 'InterUI-Bold',
+      italic: 'InterUI-BoldItalic',
+    },
+  },
+  ui: {
+    regular: 'System',
+  },
+};
 
 /* Responsive breakpoints */
 // export const breakpoints = {};
@@ -52,6 +76,29 @@ const colors = {
  * }
  * ```
  */
-// const overrides = {};
+const overrides = {
+  'ui-onboarding.Landing.BrandIcon': {
+    name: 'brand-icon', // Use this if we need to add a custom brand icon
+  },
+  'ui-onboarding.Landing': {
+    description:
+      'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.',
+  },
+  'ui-onboarding.Features': {
+    description:
+      "We'd like to help you personalize your profile to make the most of your online experience.",
+  },
+  'ui-onboarding.LocationFinder': {
+    description:
+      "We'll use your location to connect you with your nearby campus and community.",
+  },
+  'ui-onboarding.AskNotifications': {
+    description:
+      "We'll let you know when important things are happening and keep you in the loop.",
+  },
+  'ui-onboarding.Follow': {
+    description: 'Follow others to stay up to date on your church community.',
+  },
+};
 
-export default { colors };
+export default { colors, overrides, typography };

@@ -31,6 +31,14 @@
 		E875558F3FB8FA2024EF7DC2 /* libPods-Eleven22.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB6B5B7B6A0D1ECB68CF0DD /* libPods-Eleven22.a */; };
 		EF3A30A2E55D4F8352E116D3 /* libPods-Eleven22-Eleven22Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0F1F316A88242D1FD60FB /* libPods-Eleven22-Eleven22Tests.a */; };
 		FCB3069DB5DD4170B2CAEFC4 /* Inter-UI-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A460FD7884FD4574A818005A /* Inter-UI-MediumItalic.otf */; };
+		7998DA33E0F44CBCA9281655 /* InterUI-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF4E9C8A6D3D47398419E289 /* InterUI-Black.otf */; };
+		D2AC7097AE2E4B7594712DE9 /* InterUI-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F2A8178E844C6AAADDEB8 /* InterUI-BlackItalic.otf */; };
+		C74C5988A7F34EF3A0109BED /* InterUI-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0218F29120EF4018AF7D0B22 /* InterUI-Bold.otf */; };
+		9C640A5F6E3B4823B815CF0B /* InterUI-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE24546C36A745AFA2CF90EE /* InterUI-BoldItalic.otf */; };
+		D30C8B1A92224B1CBC78AEA1 /* InterUI-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A1C547E2E0746B08F3E27A8 /* InterUI-Italic.otf */; };
+		6C7FB4D4E8614C19901DC902 /* InterUI-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 880A83B55171402E8D758DD2 /* InterUI-Medium.otf */; };
+		2401BC2B172943878B990F11 /* InterUI-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCCB1D5DCB6B4C20849CD59A /* InterUI-MediumItalic.otf */; };
+		5D86741800E441BDACAAD3B6 /* InterUI-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E12C7166CB4A4A699EF793F4 /* InterUI-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +120,14 @@
 		EC21254B449443F99016EBFD /* Inter-UI-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-UI-Black.otf"; path = "../assets/fonts/Inter-UI-Black.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EF4E9C8A6D3D47398419E289 /* InterUI-Black.otf */ = {isa = PBXFileReference; name = "InterUI-Black.otf"; path = "../assets/fonts/InterUI-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3A3F2A8178E844C6AAADDEB8 /* InterUI-BlackItalic.otf */ = {isa = PBXFileReference; name = "InterUI-BlackItalic.otf"; path = "../assets/fonts/InterUI-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0218F29120EF4018AF7D0B22 /* InterUI-Bold.otf */ = {isa = PBXFileReference; name = "InterUI-Bold.otf"; path = "../assets/fonts/InterUI-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE24546C36A745AFA2CF90EE /* InterUI-BoldItalic.otf */ = {isa = PBXFileReference; name = "InterUI-BoldItalic.otf"; path = "../assets/fonts/InterUI-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A1C547E2E0746B08F3E27A8 /* InterUI-Italic.otf */ = {isa = PBXFileReference; name = "InterUI-Italic.otf"; path = "../assets/fonts/InterUI-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		880A83B55171402E8D758DD2 /* InterUI-Medium.otf */ = {isa = PBXFileReference; name = "InterUI-Medium.otf"; path = "../assets/fonts/InterUI-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BCCB1D5DCB6B4C20849CD59A /* InterUI-MediumItalic.otf */ = {isa = PBXFileReference; name = "InterUI-MediumItalic.otf"; path = "../assets/fonts/InterUI-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E12C7166CB4A4A699EF793F4 /* InterUI-Regular.otf */ = {isa = PBXFileReference; name = "InterUI-Regular.otf"; path = "../assets/fonts/InterUI-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +220,14 @@
 				DC74A378C1CC40E4B6192D7F /* Inter-UI-Medium.otf */,
 				A460FD7884FD4574A818005A /* Inter-UI-MediumItalic.otf */,
 				A613256118404CB691DE2C8E /* Inter-UI-Regular.otf */,
+				EF4E9C8A6D3D47398419E289 /* InterUI-Black.otf */,
+				3A3F2A8178E844C6AAADDEB8 /* InterUI-BlackItalic.otf */,
+				0218F29120EF4018AF7D0B22 /* InterUI-Bold.otf */,
+				DE24546C36A745AFA2CF90EE /* InterUI-BoldItalic.otf */,
+				5A1C547E2E0746B08F3E27A8 /* InterUI-Italic.otf */,
+				880A83B55171402E8D758DD2 /* InterUI-Medium.otf */,
+				BCCB1D5DCB6B4C20849CD59A /* InterUI-MediumItalic.otf */,
+				E12C7166CB4A4A699EF793F4 /* InterUI-Regular.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -418,6 +442,14 @@
 				FCB3069DB5DD4170B2CAEFC4 /* Inter-UI-MediumItalic.otf in Resources */,
 				AB3BD177B8A14193A5EEDDF8 /* Inter-UI-Regular.otf in Resources */,
 				4CA6A042251BC0BF00DD0D97 /* SplashScreen.storyboard in Resources */,
+				7998DA33E0F44CBCA9281655 /* InterUI-Black.otf in Resources */,
+				D2AC7097AE2E4B7594712DE9 /* InterUI-BlackItalic.otf in Resources */,
+				C74C5988A7F34EF3A0109BED /* InterUI-Bold.otf in Resources */,
+				9C640A5F6E3B4823B815CF0B /* InterUI-BoldItalic.otf in Resources */,
+				D30C8B1A92224B1CBC78AEA1 /* InterUI-Italic.otf in Resources */,
+				6C7FB4D4E8614C19901DC902 /* InterUI-Medium.otf in Resources */,
+				2401BC2B172943878B990F11 /* InterUI-MediumItalic.otf in Resources */,
+				5D86741800E441BDACAAD3B6 /* InterUI-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
