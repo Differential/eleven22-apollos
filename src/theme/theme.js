@@ -1,5 +1,3 @@
-import React from 'react';
-import { Text, Image } from 'react-native';
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -21,20 +19,20 @@ const colors = {
 const typography = {
   sans: {
     regular: {
-      default: 'InterUI-Regular',
-      italic: 'InterUI-Italic',
+      default: 'Inter-Regular',
+      italic: 'Inter-Italic',
     },
     medium: {
-      default: 'InterUI-Medium',
-      italic: 'InterUI-MediumItalic',
+      default: 'Inter-Medium',
+      italic: 'Inter-MediumItalic',
     },
     bold: {
-      default: 'InterUI-Bold',
-      italic: 'InterUI-BoldItalic',
+      default: 'Inter-Bold',
+      italic: 'Inter-BoldItalic',
     },
     black: {
-      default: 'InterUI-Bold',
-      italic: 'InterUI-BoldItalic',
+      default: 'Inter-Bold',
+      italic: 'Inter-BoldItalic',
     },
   },
   ui: {
