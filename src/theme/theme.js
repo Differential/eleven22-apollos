@@ -1,3 +1,4 @@
+import { styled, H5 } from '@apollosproject/ui-kit';
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -82,6 +83,9 @@ const overrides = {
     description:
       'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.',
   },
+  'ui-onboarding.Landing.Subtitle': (theme) => ({
+    color: theme.colors.black,
+  }),
   'ui-onboarding.Features': {
     description:
       "We'd like to help you personalize your profile to make the most of your online experience.",
