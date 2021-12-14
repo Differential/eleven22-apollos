@@ -19,20 +19,20 @@ const colors = {
 const typography = {
   sans: {
     regular: {
-      default: 'Inter-Regular',
-      italic: 'Inter-Italic',
+      default: 'Futura',
+      italic: 'Futura-Italic',
     },
     medium: {
-      default: 'Inter-Medium',
-      italic: 'Inter-MediumItalic',
+      default: 'Futura-Medium',
+      italic: 'Futura-MediumItalic',
     },
     bold: {
-      default: 'Inter-Bold',
-      italic: 'Inter-BoldItalic',
+      default: 'Futura-Bold',
+      italic: 'Futura-BoldItalic',
     },
     black: {
-      default: 'Inter-Bold',
-      italic: 'Inter-BoldItalic',
+      default: 'Futura-Bold',
+      italic: 'Futura-BoldItalic',
     },
   },
   ui: {
