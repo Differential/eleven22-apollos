@@ -1,3 +1,4 @@
+import { styled, H5 } from '@apollosproject/ui-kit';
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -16,7 +17,29 @@ const colors = {
 /* Base Typography sizing and fonts.
  * To control speicfic styles used on different type components (like H1, H2, etc), see "overrides"
  */
-// const typography = {};
+const typography = {
+  sans: {
+    regular: {
+      default: 'Futura',
+      italic: 'Futura-Italic',
+    },
+    medium: {
+      default: 'Futura-Medium',
+      italic: 'Futura-MediumItalic',
+    },
+    bold: {
+      default: 'Futura-Bold',
+      italic: 'Futura-BoldItalic',
+    },
+    black: {
+      default: 'Futura-Bold',
+      italic: 'Futura-BoldItalic',
+    },
+  },
+  ui: {
+    regular: 'System',
+  },
+};
 
 /* Responsive breakpoints */
 // export const breakpoints = {};
@@ -52,6 +75,32 @@ const colors = {
  * }
  * ```
  */
-// const overrides = {};
+const overrides = {
+  'ui-onboarding.Landing.BrandIcon': {
+    name: 'brand-icon', // Use this if we need to add a custom brand icon
+  },
+  'ui-onboarding.Landing': {
+    description:
+      'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.',
+  },
+  'ui-onboarding.Landing.Subtitle': (theme) => ({
+    color: theme.colors.black,
+  }),
+  'ui-onboarding.Features': {
+    description:
+      "We'd like to help you personalize your profile to make the most of your online experience.",
+  },
+  'ui-onboarding.LocationFinder': {
+    description:
+      "We'll use your location to connect you with your nearby campus and community.",
+  },
+  'ui-onboarding.AskNotifications': {
+    description:
+      "We'll let you know when important things are happening and keep you in the loop.",
+  },
+  'ui-onboarding.Follow': {
+    description: 'Follow others to stay up to date on your church community.',
+  },
+};
 
-export default { colors };
+export default { colors, overrides, typography };
