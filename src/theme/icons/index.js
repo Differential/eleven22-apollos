@@ -4,6 +4,7 @@ export CaretRight from './CaretRight';
 export HandsHeart from './HandsHeart';
 export HandWaving from './HandWaving';
 export House from './House';
+export LetterE from './LetterE';
 export NextSteps from './NextSteps';
 export Question from './Question';
 export WatchVideo from './WatchVideo';

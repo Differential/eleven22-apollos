@@ -77,7 +77,7 @@ const typography = {
  */
 const overrides = {
   'ui-onboarding.Landing.BrandIcon': {
-    name: 'brand-icon', // Use this if we need to add a custom brand icon
+    name: 'letter-e', // Use this if we need to add a custom brand icon
   },
   'ui-onboarding.Landing': {
     description:
