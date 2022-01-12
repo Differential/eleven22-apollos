@@ -8,5 +8,9 @@
 	<array>
 		<string>group.com.subsplashconsulting.85WT9F</string>
 	</array>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+    <string>applinks:eleven22.production.apollos.app</string>
+	</array>
 </dict>
 </plist>
