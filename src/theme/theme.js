@@ -84,7 +84,7 @@ const overrides = {
       'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.',
   },
   'ui-onboarding.Landing.Subtitle': (theme) => ({
-    color: theme.colors.black,
+    color: theme.colors.text.primary,
   }),
   'ui-onboarding.Features': {
     description:
