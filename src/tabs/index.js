@@ -21,18 +21,6 @@ import ActionTable from '../ui/ActionTable';
 import ActionBar from '../ui/ActionBar';
 import tabBarIcon from './tabBarIcon';
 
-// const HeaderLogo = withTheme(({ theme }) => ({
-//   style: {
-//     height: theme.sizing.baseUnit * 1.5,
-//     width: '70%',
-//     resizeMode: 'contain',
-//   },
-//   source:
-//     theme.type === 'light'
-//       ? require('./wordmark.dark.png')
-//       : require('./wordmark.dark.png'),
-// }))(Image);
-
 const HeaderLogo = withTheme(({ theme }) => ({
   fill: theme.colors.primary,
   size: 24,
