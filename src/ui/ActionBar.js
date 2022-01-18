@@ -21,7 +21,7 @@ const Toolbar = () => {
           <ActionBarItem
             onPress={() => openUrl('https://www.coe22.com/serve')}
             icon="question"
-            label="Volunteer"
+            label="Serve"
           />
         </ActionBar>
       )}

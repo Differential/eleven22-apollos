@@ -76,6 +76,7 @@ const HomeTab = createFeatureFeedTab({
 const NextSteps = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
+    headerRight: SearchButton,
   },
   tabName: 'Next Steps',
   feedName: 'READ',
@@ -84,6 +85,7 @@ const NextSteps = createFeatureFeedTab({
 const WatchTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
+    headerRight: SearchButton,
   },
   tabName: 'Watch',
   feedName: 'WATCH',
