@@ -1,4 +1,6 @@
-import { styled, H5 } from '@apollosproject/ui-kit';
+import { Text } from 'react-native';
+import { ScriptureText, VerseNumber } from '@apollosproject/ui-scripture';
+import { BodyText } from '@apollosproject/ui-kit';
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
@@ -108,6 +110,19 @@ const overrides = {
   },
   'ui-auth.ProfileEntry': {
     prompt: 'Complete your profile to get connected!',
+  },
+  'ui-prayer.Confirmation': {
+    body: () => (
+      <Text>
+        <ScriptureText>
+          And this is the confidence that we have toward him, that if we ask
+          anything according to his will he hears us.{'\n'}
+          <VerseNumber>1 John 5:14</VerseNumber>
+        </ScriptureText>
+        {'\n\n'}
+        <BodyText>We’re praying with you{'\n'}and believe in you.</BodyText>
+      </Text>
+    ),
   },
 };
 
