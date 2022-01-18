@@ -14,14 +14,14 @@ const Toolbar = () => {
             label="Check-in"
           />
           <ActionBarItem
-            onPress={() => openUrl('https://www.coe22.com/give')}
-            icon="hands-heart"
-            label="Give"
-          />
-          <ActionBarItem
             onPress={() => openUrl('https://www.coe22.com/serve')}
             icon="question"
             label="Serve"
+          />
+          <ActionBarItem
+            onPress={() => openUrl('https://www.coe22.com/give')}
+            icon="hands-heart"
+            label="Give"
           />
         </ActionBar>
       )}
