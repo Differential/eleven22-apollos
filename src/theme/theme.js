@@ -119,8 +119,6 @@ const overrides = {
           anything according to his will he hears us.{'\n'}
           <VerseNumber>1 John 5:14</VerseNumber>
         </ScriptureText>
-        {'\n\n'}
-        <BodyText>We’re praying with you{'\n'}and believe in you.</BodyText>
       </Text>
     ),
   },
