@@ -101,6 +101,14 @@ const overrides = {
   'ui-onboarding.Follow': {
     description: 'Follow others to stay up to date on your church community.',
   },
+  'ui-onboarding.Entry': {
+    authTitleTest: 'Have We Met?',
+    description:
+      'Sign in for a personalized experience as you discover and deepen your relationship with Jesus Christ',
+  },
+  'ui-auth.ProfileEntry': {
+    prompt: 'Complete your profile to get connected!',
+  },
 };
 
 export default { colors, overrides, typography };
