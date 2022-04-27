@@ -144,13 +144,14 @@
   dependencies:
     "@apollo/client" "3.3.20"
 
-"@apollosproject/ui-media-player@^2.42.0":
-  version "2.42.0"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-media-player/-/ui-media-player-2.42.0.tgz#c8bcb72e8b96b4243d7ebaad3fac44facfb92e40"
-  integrity sha512-lO5OECmISZJNvxgUPgltKmlqgieMZXs5/fj3Q8LFQvQ8thpLPsUjBh4RV1DEhz9S38jy1yEObUTcvVecFir7nw==
+"@apollosproject/ui-media-player@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-media-player/-/ui-media-player-3.4.2.tgz#6ff01cae619873d7a93439896cfa1b609b4dd964"
+  integrity sha512-bW/gWRwhVT2DXUEYP533mNMnpqZzfrSTVgEqATfV95IOe/eb6FySJMzQApONV78Y3PneF2BhUSeeWt93t03c7A==
   dependencies:
     "@types/color" "^3.0.1"
     color "^3.1.2"
+    react-native-youtube-iframe "~2.2.2"
     use-debounce "5.1.0"
 
 "@apollosproject/ui-notifications@^2.36.3":
@@ -4006,7 +4007,7 @@ eventemitter3@^3.0.0:
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha512-tvtQIeLVHjDkJYnzf2dgVMxfuSGJeM/7UCG17TT4EumTfNtF+0nebF/4zWOIkCreAbtNqhGEboB6BWrwqNaw4Q==
 
-events@^3.0.0:
+events@^3.0.0, events@^3.2.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/events/-/events-3.3.0.tgz#31a95ad0a924e2d2c419a813aeb2c4e878ea7400"
   integrity sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==
@@ -8176,6 +8177,13 @@ react-native-webview@^11.0.0:
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
+
+react-native-youtube-iframe@~2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-youtube-iframe/-/react-native-youtube-iframe-2.2.2.tgz#ade1a2e4ead3d539fbb80463f45b59ff1b510b55"
+  integrity sha512-og2KW21kCwAHKcnWoyWWBYC6J2Xtqjjwpghhoy9G6zfwZkr8Ej27BbQIAKM/TheJJUZ5/YUrqsgqAdnFYDx5TQ==
+  dependencies:
+    events "^3.2.0"
 
 react-native@0.66.1:
   version "0.66.1"
