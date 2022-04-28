@@ -9,17 +9,14 @@
     "setup": "./scripts/init.sh",
     "ios": "react-native run-ios",
     "android": "SIM=\"$($HOME/Library/Android/sdk/emulator/emulator -list-avds | sed -n 1p)\" && $HOME/Library/Android/sdk/emulator/emulator -avd \"${SIM}\" & react-native run-android",
-    "codecov": "cat ./coverage/lcov.info | codecov",
     "lint": "eslint .",
     "postinstall": "jetify && yarn pods",
     "bump": "yarn version --patch",
     "postversion": "react-native-version --amend --never-increment-build && git push --follow-tags",
     "pods": "(bundle install && cd ios && bundle exec pod install --repo-update)",
-    "start": "yarn start:dev",
-    "start:dev": "node ./scripts/get-introspection-data.js && react-native start",
-    "test": "echo \"No tests\"",
-    "icons": "react-native set-icon --path",
-    "splash": "react-native set-splash --path"
+    "prestart": "node ./scripts/get-introspection-data.js",
+    "start": "react-native start",
+    "test": "echo \"No tests\""
   },
   "jest": {
     "preset": "react-native",
@@ -58,6 +55,7 @@
     "@apollosproject/ui-scripture": "^3.0.2",
     "@apollosproject/ui-test-utils": "^3.0.2",
     "@bugsnag/react-native": "^7.16.2",
+    "@carimus/metro-symlinked-deps": "^1.1.0",
     "@react-native-community/async-storage": "^1.5.1",
     "@react-native-community/datetimepicker": "^3.0.0",
     "@react-native-community/geolocation": "^2.0.2",

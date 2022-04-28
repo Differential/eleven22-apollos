@@ -1,6 +1,6 @@
 import { Text } from 'react-native';
 import { ScriptureText, VerseNumber } from '@apollosproject/ui-scripture';
-import { BodyText } from '@apollosproject/ui-kit';
+
 /* Add your custom theme definitions below. Anything that is supported in UI-Kit Theme can be
  overridden and/or customized here! */
 
