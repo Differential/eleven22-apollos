@@ -5,8 +5,6 @@ if test -f .env; then
 fi
 
 echo "You will need the following before beginning:
-API URL
-Android App Bundle ID
 Google Maps API Key
 
 Are you ready to proceed? [y/n]: "
@@ -16,12 +14,10 @@ if $ANSWER != "y"; then
 fi
 
 # config variables
-echo "API URL: "
-read -r API
 echo "Google Maps API Key: "
 read -r GOOGLE
 
-echo "APP_DATA_URL=$API
+echo "APP_DATA_URL=http://localhost:4000
 GOOGLE_MAPS_API_KEY=$GOOGLE" >.env
 
 # remove template encrypted files

@@ -17,8 +17,6 @@ import ClientProvider, { client } from './client';
 const amplitude = Amplitude.getInstance();
 amplitude.init(ApollosConfig.AMPLITUDE_API_KEY);
 
-amplitude.logEvent('TEST EVENT');
-
 const AppProviders = ({ children }) => (
   <ClientProvider>
     <NotificationsProvider
