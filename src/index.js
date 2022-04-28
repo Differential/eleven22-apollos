@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-handler-names */
-
 import { StatusBar } from 'react-native';
 import {
   NavigationContainer,
@@ -12,6 +10,7 @@ import SplashScreen from 'react-native-splash-screen';
 import 'react-native-gesture-handler'; // required for react-navigation
 import { enableScreens } from 'react-native-screens';
 
+import ApollosConfig from '@apollosproject/config';
 import {
   BackgroundView,
   withTheme,
@@ -20,9 +19,8 @@ import {
 } from '@apollosproject/ui-kit';
 import Passes from '@apollosproject/ui-passes';
 import { MapViewConnected as Location } from '@apollosproject/ui-mapview';
-import Auth, { ProtectedRoute } from '@apollosproject/ui-auth';
-import { Landing, Onboarding } from '@apollosproject/ui-onboarding';
-import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import Auth, { ProtectedRoute } from '@apollosproject/ui-authentication';
+import { Onboarding } from '@apollosproject/ui-onboarding';
 
 import {
   ContentSingleConnected,
@@ -32,7 +30,6 @@ import {
 } from '@apollosproject/ui-connected';
 import Providers from './Providers';
 import Tabs from './tabs';
-import customTheme, { customIcons } from './theme';
 
 enableScreens(); // improves performance for react-navigation
 
@@ -52,12 +49,6 @@ const ProtectedRouteWithSplashScreen = () => {
   );
 };
 
-const WrappedContentSingleConnected = (props) => (
-  <BottomSheetModalProvider>
-    <ContentSingleConnected {...props} />
-  </BottomSheetModalProvider>
-);
-
 const ThemedNavigationContainer = withTheme(({ theme, ...props }) => ({
   theme: {
     ...(theme.type === 'dark' ? DarkTheme : DefaultTheme),
@@ -75,15 +66,10 @@ const ThemedNavigationContainer = withTheme(({ theme, ...props }) => ({
   <NavigationContainer ref={containerRef} {...props} />
 ));
 
-const LandingToAuth = () => {
-  const navigation = useNavigation();
-  return <Landing onPressPrimary={() => navigation.navigate('Auth')} />;
-};
-
 const { Navigator, Screen } = createNativeStackNavigator();
 
 const App = () => (
-  <ThemeProvider themeInput={customTheme} iconInput={customIcons}>
+  <ThemeProvider theme={ApollosConfig.THEME} icons={ApollosConfig.ICONS}>
     <BackgroundView>
       <AppStatusBar />
       <ThemedNavigationContainer
@@ -108,7 +94,7 @@ const App = () => (
             />
             <Screen
               name="ContentSingle"
-              component={WrappedContentSingleConnected}
+              component={ContentSingleConnected}
               options={{
                 title: 'Content',
                 stackPresentation: 'fullScreenModal',
@@ -148,7 +134,6 @@ const App = () => (
                 stackPresentation: 'push',
               }}
             />
-            <Screen name="LandingScreen" component={LandingToAuth} />
             <Screen name="Search" component={SearchScreenConnected} />
             <Screen
               name="UserSettingsNavigator"
