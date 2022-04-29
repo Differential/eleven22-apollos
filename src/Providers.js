@@ -1,7 +1,7 @@
 import querystring from 'querystring';
 import PropTypes from 'prop-types';
 import { NavigationService } from '@apollosproject/ui-kit';
-import { AuthProvider } from '@apollosproject/ui-auth';
+import { AuthProvider } from '@apollosproject/ui-authentication';
 import { AnalyticsProvider } from '@apollosproject/ui-analytics';
 import { NotificationsProvider } from '@apollosproject/ui-notifications';
 import {
@@ -16,8 +16,6 @@ import ClientProvider, { client } from './client';
 
 const amplitude = Amplitude.getInstance();
 amplitude.init(ApollosConfig.AMPLITUDE_API_KEY);
-
-amplitude.logEvent('TEST EVENT');
 
 const AppProviders = ({ children }) => (
   <ClientProvider>

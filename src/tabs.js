@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Image, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
@@ -17,15 +18,17 @@ import {
   ConnectScreenConnected,
 } from '@apollosproject/ui-connected';
 import { checkOnboardingStatusAndNavigate } from '@apollosproject/ui-onboarding';
-import ActionTable from '../ui/ActionTable';
-import ActionBar from '../ui/ActionBar';
-import tabBarIcon from './tabBarIcon';
 
-const HeaderLogo = withTheme(({ theme }) => ({
-  fill: theme.colors.primary,
-  size: 24,
-  name: 'letter-e',
-}))(Icon);
+const HeaderLogo = () => {
+  const theme = useTheme();
+  return (
+    <Icon
+      name="brand-icon"
+      size={theme.sizing.baseUnit * 1.5}
+      fill={theme.colors.primary}
+    />
+  );
+};
 
 const ProfileButton = () => {
   const navigation = useNavigation();
@@ -51,13 +54,25 @@ const SearchButton = () => {
         navigation.navigate('Search');
       }}
     >
-      <Icon
-        name="search"
-        size={theme.sizing.baseUnit * 1.5}
-        fill={theme.colors.primary}
-      />
+      <View>
+        <Icon
+          name="search"
+          size={theme.sizing.baseUnit * 2}
+          fill={theme.colors.primary}
+        />
+      </View>
     </Touchable>
   );
+};
+
+const tabBarIcon = (name) => {
+  function TabBarIcon({ color }) {
+    return <Icon name={name} fill={color} size={24} />;
+  }
+  TabBarIcon.propTypes = {
+    color: PropTypes.string,
+  };
+  return TabBarIcon;
 };
 
 // we nest stack inside of tabs so we can use all the fancy native header features
@@ -73,7 +88,7 @@ const HomeTab = createFeatureFeedTab({
   feedName: 'HOME',
 });
 
-const NextSteps = createFeatureFeedTab({
+const NextStepsTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
     headerRight: SearchButton,
@@ -91,27 +106,13 @@ const WatchTab = createFeatureFeedTab({
   feedName: 'WATCH',
 });
 
-const CustomConnectScreen = () => (
-  <ConnectScreenConnected ActionTable={ActionTable} ActionBar={ActionBar} />
-);
-
-const ConnectTabStack = createNativeStackNavigator();
-const ConnectTabStackNavigator = () => (
-  <ConnectTabStack.Navigator
-    screenOptions={{
-      headerHideShadow: true,
-      headerLargeTitle: true,
-    }}
-  >
-    <ConnectTabStack.Screen
-      name={'Connect'}
-      component={CustomConnectScreen}
-      options={{
-        headerLeft: ProfileButton,
-      }}
-    />
-  </ConnectTabStack.Navigator>
-);
+const ConnectTab = createFeatureFeedTab({
+  options: {
+    headerLeft: ProfileButton,
+  },
+  tabName: 'Connect',
+  feedName: 'CONNECT',
+});
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -141,12 +142,12 @@ const TabNavigator = () => {
       />
       <Screen
         name="Next Steps"
-        component={NextSteps}
+        component={NextStepsTab}
         options={{ tabBarIcon: tabBarIcon('next-steps') }}
       />
       <Screen
         name="Connect"
-        component={ConnectTabStackNavigator}
+        component={ConnectTab}
         options={{
           tabBarIcon: tabBarIcon('profile'),
         }}

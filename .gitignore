@@ -146,16 +146,19 @@ DerivedData
 
 # Fastlane
 fastlane/report.xml
+fastlane/Preview.html
+fastlane/apple-api-key.json
+fastlane/google-api-key.json
 
 # symbols
 *.app.dSYM.zip
 
-# iOS keys
-push.pem
+# iOS
+*.pem
 *.p8
+*.p12
 
-# Google Play authentication key
-key.json
+# Android
 *.keystore
 
 # shared secrets
@@ -163,3 +166,5 @@ key.json
 
 # GraphQL info
 fragmentTypes.json
+
+vendor
