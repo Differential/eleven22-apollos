@@ -18,6 +18,8 @@ jobs:
       with:
         node-version: 14
 
+    - uses: actions/setup-ruby@v1
+
     - name: Install Bundler
       run: gem install bundler
 
@@ -33,7 +35,7 @@ jobs:
       run: eval $(grep APP_DATA_URL .env) && node ./scripts/get-introspection-data.js
 
     - name: Fastlane Deploy
-      run: bundle exec fastlane ios deploy
+      run: npx @apollosproject/apollos-cli mobile deploy ios publish
 
   android:
     runs-on: macos-latest
@@ -47,6 +49,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 14
+
+    - uses: actions/setup-ruby@v1
 
     - name: Install Bundler
       run: gem install bundler
@@ -63,4 +67,4 @@ jobs:
       run: eval $(grep APP_DATA_URL .env) && node ./scripts/get-introspection-data.js
 
     - name: Fastlane Deploy
-      run: bundle exec fastlane android deploy
+      run: npx @apollosproject/apollos-cli mobile deploy android publish

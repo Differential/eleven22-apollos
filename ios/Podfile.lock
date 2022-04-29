@@ -305,7 +305,7 @@ PODS:
   - React-jsinspector (0.67.2)
   - React-logger (0.67.2):
     - glog
-  - react-native-apollos-player (3.5.0):
+  - react-native-apollos-player (3.2.0):
     - React
   - react-native-config (0.11.7):
     - React
@@ -326,7 +326,7 @@ PODS:
     - React
   - react-native-safari-view (1.0.0):
     - React
-  - react-native-safe-area-context (3.3.2):
+  - react-native-safe-area-context (3.4.1):
     - React-Core
   - react-native-splash-screen (3.3.0):
     - React-Core
@@ -335,7 +335,7 @@ PODS:
     - react-native-video/Video (= 5.2.0)
   - react-native-video/Video (5.2.0):
     - React-Core
-  - react-native-webview (11.14.2):
+  - react-native-webview (11.17.2):
     - React-Core
   - React-perflogger (0.67.2)
   - React-RCTActionSheet (0.67.2):
@@ -418,7 +418,7 @@ PODS:
     - React-Core
   - RNPermissions (2.2.2):
     - React-Core
-  - RNReanimated (2.2.4):
+  - RNReanimated (2.4.1):
     - DoubleConversion
     - FBLazyVector
     - FBReactNativeSpec
@@ -444,7 +444,6 @@ PODS:
     - React-RCTNetwork
     - React-RCTSettings
     - React-RCTText
-    - React-RCTVibration
     - ReactCommon/turbomodule/core
     - Yoga
   - RNScreens (3.10.2):
@@ -742,7 +741,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 52beb652bbc61201bd70cbe4f0b8edb607e8da4f
   React-jsinspector: 595f76eba2176ebd8817a1fffd47b84fbdab9383
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
-  react-native-apollos-player: d68362bac15f6db6f48d8284bf83e67bebaa2aaf
+  react-native-apollos-player: 23ef4686058f73cd7ddf6e9e8ed9b31791011645
   react-native-config: 55548054279d92e0e4566ea15a8b9b81028ec342
   react-native-geolocation: c956aeb136625c23e0dce0467664af2c437888c9
   react-native-geolocation-service: c0efb872258ed9240f1003a70fca9e9757e5c785
@@ -752,10 +751,10 @@ SPEC CHECKSUMS:
   react-native-onesignal: 3ca13c0004f12bff30f479f1a303286fd119dd56
   react-native-passkit-wallet: 51e3babdaeec4c10b5736786ebd1bfb470fcaa36
   react-native-safari-view: 955d7160d159241b8e9395d12d10ea0ef863dcdd
-  react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
+  react-native-safe-area-context: 9e40fb181dac02619414ba1294d6c2a807056ab9
   react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   react-native-video: a4c2635d0802f983594b7057e1bce8f442f0ad28
-  react-native-webview: cc4ac8f021a832dce2979e1f48c5595341dd2fb5
+  react-native-webview: 380c1a03ec94b7ed764dac8db1e7c9952d08c93a
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a
   React-RCTAnimation: 08d4cac13222bb1348c687a0158dfd3b577cdb63
@@ -776,7 +775,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNInAppBrowser: 48b95ba7a4eaff5cc223bca338d3e319561dbd1b
   RNPermissions: 5df468064df661a4c8c017e2791ce90d7695eea5
-  RNReanimated: e28dfaa950064b674fde0a9b736e62b9dff500a7
+  RNReanimated: 32c91e28f5780937b8efc07ddde1bab8d373fe0b
   RNScreens: d6da2b9e29cf523832c2542f47bf1287318b1868
   RNSha256: bf2c90a9e0cec6dcbcc4100e4e19715ae7feaa34
   RNSharedElement: eb7d506733952d58634f34c82ec17e82f557e377
@@ -784,6 +783,6 @@ SPEC CHECKSUMS:
   Yoga: 9b6696970c3289e8dea34b3eda93f23e61fb8121
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 6280f674218ed4364cf16dd99b1f663d90302050
+PODFILE CHECKSUM: 192cdcf6119c3abee774c82bff05a8f3f32698d1
 
 COCOAPODS: 1.11.2
