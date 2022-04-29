@@ -19,8 +19,6 @@ jobs:
         node-version: 14
 
     - uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.7.5
 
     - name: Install Bundler
       run: gem install bundler
