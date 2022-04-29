@@ -79,6 +79,12 @@ const THEME = {
         </Text>
       ),
     },
+    'ui-kit.ContentTitles': {
+      onPressShare: () => null,
+    },
+    'ui-connected.ScriptureFeature': {
+      showShareButton: false,
+    },
   },
 };
 
