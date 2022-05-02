@@ -106,6 +106,14 @@ const WatchTab = createFeatureFeedTab({
   feedName: 'WATCH',
 });
 
+const GiveTab = createFeatureFeedTab({
+  options: {
+    headerLeft: ProfileButton,
+  },
+  tabName: 'Give',
+  feedName: 'PRAY',
+});
+
 const ConnectTab = createFeatureFeedTab({
   options: {
     headerLeft: ProfileButton,
@@ -144,6 +152,11 @@ const TabNavigator = () => {
         name="Next Steps"
         component={NextStepsTab}
         options={{ tabBarIcon: tabBarIcon('next-steps') }}
+      />
+      <Screen
+        name="Give"
+        component={GiveTab}
+        options={{ tabBarIcon: tabBarIcon('currency-circle-dollar') }}
       />
       <Screen
         name="Connect"
