@@ -4,6 +4,9 @@ import Svg, { Circle, Line, Path, Polyline } from 'react-native-svg';
 import FRAGMENTS from '@apollosproject/ui-fragments';
 import { makeIcon } from '@apollosproject/ui-kit';
 import { ScriptureText, VerseNumber } from '@apollosproject/ui-scripture';
+import { Dimensions } from 'react-native';
+
+const screen = Dimensions.get('screen');
 
 const THEME = {
   colors: {
@@ -40,7 +43,9 @@ const THEME = {
     },
     'ui-onboarding.LandingSwiper.slides.Intro': {
       subtitle:
-        'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.',
+        screen.height >= 800
+          ? 'The Church of Eleven22 is a movement for all people to discover and deepen a relationship with Jesus Christ.'
+          : '',
     },
     'ui-onboarding.Landing.Subtitle': (theme) => ({
       color: theme.colors.text.primary,
