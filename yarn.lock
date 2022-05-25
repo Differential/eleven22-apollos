@@ -58,12 +58,13 @@
     react-native-url-polyfill "^1.3.0"
     yup "^0.27.0"
 
-"@apollosproject/ui-connected@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-connected/-/ui-connected-3.5.0.tgz#ad270ce17e0eff1b7db6beb74456c0a62a2cc47c"
-  integrity sha512-JFi+5rAAydS4Uf+XdDP/tzRvC/24W4aG07LNv3wY7LKwUUsx+0fEfN49hoAzii23MAlpEZQ+wCz620Ww7pHG6g==
+"@apollosproject/ui-connected@^3.7.1-canary.2":
+  version "3.7.1-canary.2"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-connected/-/ui-connected-3.7.1-canary.2.tgz#4d6c8daa631ce1087172598bac09be962dab8bbd"
+  integrity sha512-lAMhN9lrJ8pHTiuQstKe8oMIYL0f5ZVljHAmgvdGHxd01FuF00yJYqT1UTlbRPwjlJAFheL/rx3hAQ4u9xMElg==
   dependencies:
     "@gorhom/bottom-sheet" "3.4.1"
+    "@react-navigation/bottom-tabs" "^5.11.8"
     apollo-upload-client "^17.0.0"
     graphql "^16.3.0"
     graphql-tag "2.9.2"
@@ -123,10 +124,10 @@
     react-native-youtube-iframe "~2.2.2"
     use-debounce "5.1.0"
 
-"@apollosproject/ui-notifications@^3.5.0":
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/@apollosproject/ui-notifications/-/ui-notifications-3.5.0.tgz#26f4d86b9546005c73459b6a4e06b57b63a9cd91"
-  integrity sha512-F0LKgwipddAkyr1zz6VviUhCbXwts8sF+6F9dD4N9wmqg5Fu/SYSP18hO6ABSaAtd/YFzFMdMHNWCebgBEWE1g==
+"@apollosproject/ui-notifications@^3.7.1-canary.2":
+  version "3.7.1-canary.2"
+  resolved "https://registry.yarnpkg.com/@apollosproject/ui-notifications/-/ui-notifications-3.7.1-canary.2.tgz#067cd21510835a93f1ecaa162d9374153ea02b2d"
+  integrity sha512-+WAs1oaoAoKU2kJKnUipwlfrKKguHIg44uSe84ZSoLS/lgA+ouCZU1PljqVJUNH1bhfXwUkaXUVYhGKrawPSbQ==
   dependencies:
     lodash "^4.17.11"
     react-native-permissions "^2.0.5"
